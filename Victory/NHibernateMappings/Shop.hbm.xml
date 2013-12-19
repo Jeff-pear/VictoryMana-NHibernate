@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Victory.NHibernateMappings" namespace="Victory.NHibernateMappings">
+  <class name="NHibernateMappings.Shop,Victory" table="shop" >
+    <id name="shopId" type="Int32" >
+      <column name="shopid" sql-type="INT" not-null="true"/>
+      <generator class="native"/>
+    </id>
+    <property name="shopName" type="String">
+      <column name="shopname" sql-type="VARCHAR(30)" not-null="false"/>
+    </property>
+    
+    <property name="userId" type="Int32">
+      <column name="userid" sql-type="INT(12)" not-null="false"/>
+    </property>
+    <property name="typeIds" type="String">
+      <column name="type_ids" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="typeId" type="Int32">
+      <column name="typeid" sql-type="INT(12)" not-null="false"/>
+    </property>
+    <property name="address" type="String">
+      <column name="address" sql-type="VARCHAR(20)" not-null="false"/>
+    </property>
+    
+    <property name="areaId" type="Int32">
+      <column name="areaid" sql-type="INT(12)" not-null="false"/>
+    </property>
+    <property name="status" type="String">
+      <column name="status" sql-type="VARCHAR(1)" not-null="false"/>
+    </property>
+    <property name="tel" type="String">
+      <column name="tel" sql-type="VARCHAR(12)" not-null="false"/>
+    </property>
+    <property name="email" type="String">
+      <column name="email" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="addtime" type="String">
+      <column name="addtime" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="opentime" type="String">
+      <column name="opentime" sql-type="VARCHAR(1)" not-null="false"/>
+    </property>
+    <property name="adduser" type="Int32">
+      <column name="adduser" sql-type="INT(12)" not-null="false"/>
+    </property>
+    <property name="modifytime" type="String">
+      <column name="modifytime" sql-type="VARCHAR(20)" not-null="false"/>
+    </property>
+    <property name="modifyuser" type="Int32">
+      <column name="modifyuser" sql-type="INT(12)" not-null="false"/>
+    </property>
+    <property name="squre" type="double">
+      <column name="squre" sql-type="double(12)" not-null="false"/>
+    </property>
+    <property name="introduction" type="String">
+      <column name="introduction" sql-type="VARCHAR(300)" not-null="false"/>
+    </property>
+    <property name="weixincode" type="String">
+      <column name="weixincode" sql-type="VARCHAR(64)" not-null="false"/>
+    </property>
+    
+    <property name="representproducts" type="String">
+      <column name="representproducts" sql-type="VARCHAR(200)" not-null="false"/>
+    </property>
+    <property name="pricerange" type="String">
+      <column name="pricerange" sql-type="VARCHAR(20)" not-null="false"/>
+    </property>
+    <property name="favorabledeals1" type="String">
+      <column name="favorabledeals1" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="favorabledeals2" type="String">
+      <column name="favorabledeals2" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="favorabledeals3" type="String">
+      <column name="favorabledeals3" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="favorabledeals4" type="String">
+      <column name="favorabledeals4" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="favorabledeals5" type="String">
+      <column name="favorabledeals5" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="attention" type="Int32">
+      <column name="attention" sql-type="INT(10)" not-null="false"/>
+    </property>
+    <property name="piclist" type="String">
+      <column name="piclist" sql-type="VARCHAR(200)" not-null="false"/>
+    </property>
+    <property name="picdetail" type="String">
+      <column name="picdetail" sql-type="VARCHAR(200)" not-null="false"/>
+    </property>
+    <property name="piclogo" type="String">
+      <column name="piclogo" sql-type="VARCHAR(200)" not-null="false"/>
+    </property>
+    <property name="picback1" type="String">
+      <column name="picback1" sql-type="VARCHAR(200)" not-null="false"/>
+    </property>
+    <property name="picback2" type="String">
+      <column name="picback2" sql-type="VARCHAR(200)" not-null="false"/>
+    </property>
+  </class>
+  
+</hibernate-mapping>

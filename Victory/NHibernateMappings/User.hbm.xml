@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Victory.NHibernateMappings" namespace="Victory.NHibernateMappings">
+  <class name="NHibernateMappings.User,Victory" table="sys_user" >
+    <id name="id" type="Int32" >
+      <column name="id" sql-type="INT" not-null="true"/>
+      <generator class="native"/>
+    </id>
+    <property name="username" type="String">
+      <column name="username" sql-type="VARCHAR(30)" not-null="false"/>
+    </property>
+    <property name="password" type="String">
+      <column name="password" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="cnName" type="String">
+      <column name="cn_name" sql-type="VARCHAR(20)" not-null="false"/>
+    </property>
+    <property name="type" type="String">
+      <column name="type" sql-type="VARCHAR(1)" not-null="false"/>
+    </property>
+    <property name="sex" type="String">
+      <column name="sex" sql-type="VARCHAR(1)" not-null="false"/>
+    </property>
+    <property name="email" type="String">
+      <column name="email" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="mobilephone" type="String">
+      <column name="mobilephone" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="isEnabled" type="String">
+      <column name="is_enabled" sql-type="VARCHAR(1)" not-null="false"/>
+    </property>
+    <property name="createDate" type="String">
+      <column name="create_date" sql-type="VARCHAR(20)" not-null="false"/>
+    </property>
+    <property name="status" type="String">
+      <column name="status" sql-type="VARCHAR(1)" not-null="false"/>
+    </property>
+    <property name="notes" type="String">
+      <column name="notes" sql-type="VARCHAR(255)" not-null="false"/>
+    </property>
+    <property name="level" type="String">
+      <column name="level" sql-type="VARCHAR(40)" not-null="false"/>
+    </property>
+    <property name="picUrl" type="String">
+      <column name="pic_url" sql-type="VARCHAR(100)" not-null="false"/>
+    </property>
+    <property name="dimensionalCodeUrl" type="String">
+      <column name="dimensional_code_url" sql-type="VARCHAR(300)" not-null="false"/>
+    </property>
+  </class>
+  
+</hibernate-mapping>
